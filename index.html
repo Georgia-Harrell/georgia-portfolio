@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Georgia Harrell — Computer Science student and developer specializing in React, mobile development, and full-stack applications.">
+  <meta name="keywords" content="Georgia Harrell, computer science, web developer, React, mobile developer, portfolio, Troy University">
+  <meta property="og:title" content="Georgia Harrell — Developer Portfolio">
+  <meta property="og:description" content="CS student building web and mobile apps with React, Next.js, C# MAUI, C++, and more.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Georgia Harrell — Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="header" role="banner">
+    <nav id="navbar" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Georgia Harrell — back to top">
+        <span class="logo-letters">GH</span><span class="logo-dot">.</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about"     class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills"    class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects"  class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#contact"   class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Let's Build</a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about"     class="mobile-nav-link">About</a></li>
+        <li><a href="#skills"    class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects"  class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact"   class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="section hero-section" aria-label="Introduction">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <p class="hero-status reveal-up">
+            <span class="status-dot"></span>Open to opportunities · CS Graduate · Class of '26
+          </p>
+          <h1 class="hero-name reveal-up">
+            Georgia<br><span class="gradient-text">Harrell.</span>
+          </h1>
+          <div class="hero-tagline reveal-up">
+            <span class="tagline-prefix">I build </span>
+            <span class="typing-wrapper">
+              <span id="typing-text" class="typing-text" aria-live="polite"></span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </span>
+          </div>
+          <p class="hero-bio reveal-up">
+            Computer Science graduate from Troy University — shipping production web apps,
+            cross-platform mobile experiences, and data-driven systems with modern tools
+            and a love for clean, purposeful code.
+          </p>
+          <div class="hero-actions reveal-up">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-ghost">Let's Connect →</a>
+          </div>
+          <div class="hero-socials reveal-up">
+            <a href="https://github.com/Georgia-Harrell" class="social-link" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/georgia-harrell-732969280/" class="social-link" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero code card visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="code-dot dot-red"></span>
+              <span class="code-dot dot-yellow"></span>
+              <span class="code-dot dot-green"></span>
+              <span class="code-card-filename">georgia.js</span>
+            </div>
+            <div class="code-card-body">
+<pre class="code-block"><code><span class="ck">const</span> <span class="cv">georgia</span> <span class="cp">=</span> {
+  <span class="cpr">role</span><span class="cp">:</span>      <span class="cs">"Full-Stack Developer"</span>,
+  <span class="cpr">school</span><span class="cp">:</span>    <span class="cs">"Troy University"</span>,
+  <span class="cpr">degree</span><span class="cp">:</span>    <span class="cs">"B.S. CS — May 2026"</span>,
+  <span class="cpr">stack</span><span class="cp">:</span> [
+    <span class="cs">"React"</span><span class="cp">,</span> <span class="cs">"Next.js"</span><span class="cp">,</span> <span class="cs">"Redux"</span>,
+    <span class="cs">"C# MAUI"</span><span class="cp">,</span> <span class="cs">"C++"</span><span class="cp">,</span> <span class="cs">"Java"</span>
+  ],
+  <span class="cpr">available</span><span class="cp">:</span> <span class="cb">true</span>,
+  <span class="cpr">coffee</span><span class="cp">:</span>    <span class="cs">"always"</span>
+};</code></pre>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-pill">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Yrs Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+<h2 id="about-heading" class="section-title">Behind the code</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrap reveal-left">
+            <div class="about-image-frame">
+              <img
+                src="./assets/profile.jpg"
+                alt="Georgia Harrell"
+                class="about-image"
+                loading="lazy"
+                width="420" height="520"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="about-image-placeholder" aria-hidden="true">GH</div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-emoji">🎓</span>
+              <div class="badge-text">
+                <strong>CS Graduate</strong>
+                <span>Troy University · Class of '26</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-body reveal-right">
+            <p class="about-p">
+              Hi! I'm Georgia, a Computer Science graduate from <strong>Troy University</strong>
+              (Class of 2026) with a passion for building things that live on the internet —
+              and beyond. My journey started at Faulkner University where I wrote my first
+              lines of HTML, and has since grown into full-stack production apps, cross-platform
+              mobile development, and low-level systems programming.
+            </p>
+            <p class="about-p">
+              I love the intersection of clean design and solid engineering. Whether I'm
+              building a full production booking platform with <strong>Next.js + Supabase</strong>,
+              architecting a React app with Redux state management, building iOS &amp; Android
+              experiences in <strong>C# MAUI</strong>, or implementing data structures in C++
+              from scratch — I care about code that works, scales, and makes someone's day easier.
+            </p>
+
+            <ul class="about-highlights" aria-label="Core strengths">
+              <li><span class="check-icon" aria-hidden="true"></span>React Ecosystem (Context, Redux, Next.js)</li>
+              <li><span class="check-icon" aria-hidden="true"></span>Cross-Platform Mobile (iOS &amp; Android via C# MAUI)</li>
+              <li><span class="check-icon" aria-hidden="true"></span>Data Structures &amp; Algorithms (C++)</li>
+              <li><span class="check-icon" aria-hidden="true"></span>Server-Side Rendering with Next.js</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Get In Touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+<h2 id="skills-heading" class="section-title">What I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card reveal-up">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="skill-card-title">Frontend</h3>
+            <div class="skill-tags">
+              <span class="stag stag--hi">React</span>
+              <span class="stag stag--hi">Next.js</span>
+              <span class="stag stag--hi">TypeScript</span>
+              <span class="stag stag--hi">Redux Toolkit</span>
+              <span class="stag">JavaScript ES6+</span>
+              <span class="stag">HTML5</span>
+              <span class="stag">CSS3</span>
+              <span class="stag">Flexbox &amp; Grid</span>
+              <span class="stag">Responsive Design</span>
+              <span class="stag">Vite</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="skill-card-title">Mobile</h3>
+            <div class="skill-tags">
+              <span class="stag stag--hi">C# MAUI</span>
+              <span class="stag stag--hi">.NET 7.0</span>
+              <span class="stag">XAML</span>
+              <span class="stag">iOS &amp; Android</span>
+              <span class="stag">Data Binding</span>
+              <span class="stag">Navigation &amp; Routing</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="skill-card-title">Systems &amp; Backend</h3>
+            <div class="skill-tags">
+              <span class="stag stag--hi">Node.js</span>
+              <span class="stag stag--hi">C++</span>
+              <span class="stag stag--hi">Java</span>
+              <span class="stag">Data Structures</span>
+              <span class="stag">Algorithms</span>
+              <span class="stag">OOP</span>
+              <span class="stag">Memory Management</span>
+              <span class="stag">Linked Lists</span>
+              <span class="stag">Queues &amp; Stacks</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-card-title">Tools &amp; Concepts</h3>
+            <div class="skill-tags">
+              <span class="stag">Git &amp; GitHub</span>
+              <span class="stag">REST APIs</span>
+              <span class="stag">npm</span>
+              <span class="stag">ESLint</span>
+              <span class="stag">SSR / SSG</span>
+              <span class="stag">async/await</span>
+              <span class="stag">Fetch API</span>
+              <span class="stag">LocalStorage</span>
+              <span class="stag">State Management</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal-up">
+            <div class="skill-card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="skill-card-title">Backend &amp; Cloud</h3>
+            <div class="skill-tags">
+              <span class="stag stag--hi">Supabase</span>
+              <span class="stag stag--hi">PostgreSQL</span>
+              <span class="stag stag--hi">Upstash Redis</span>
+              <span class="stag stag--hi">Vercel</span>
+              <span class="stag">Resend</span>
+              <span class="stag">Server Components</span>
+              <span class="stag">API Routes</span>
+              <span class="stag">Supabase Auth</span>
+              <span class="stag">bcrypt</span>
+              <span class="stag">HMAC Token Signing</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+<h2 id="projects-heading" class="section-title">Things I've built</h2>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="project-filters reveal-up" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="nextjs">Next.js</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="cpp">C++</button>
+          <button class="filter-btn" data-filter="web">HTML/CSS/JS</button>
+        </div>
+
+        <!-- Featured project -->
+        <article class="project-featured reveal-up" data-category="nextjs" aria-label="Featured project: The RiverRob Experience">
+          <div class="featured-inner">
+            <div class="featured-text">
+              <span class="featured-badge">⭐ Flagship Project — Live Production App</span>
+              <h3 class="project-title">The RiverRob Experience</h3>
+              <p class="project-desc">
+                A production-grade booking and marketing platform for a real guided river
+                adventure business in Fort White, Florida. Built with <strong>Next.js App Router</strong>,
+                <strong>TypeScript</strong>, and <strong>Supabase</strong> — handling real bookings,
+                live payments, user authentication, and a full admin dashboard for actual paying customers.
+              </p>
+              <ul class="featured-features" aria-label="Key features">
+                <li>Multi-step booking system with real-time pricing</li>
+                <li>Supabase auth, database &amp; image storage</li>
+                <li>Full admin dashboard (bookings, reviews, gallery)</li>
+                <li>Shopping cart &amp; checkout with waiver flow</li>
+                <li>72+ photo gallery, blog &amp; reviews system</li>
+                <li>Email notifications via Resend + Redis caching</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="ttag">Next.js</span>
+                <span class="ttag">TypeScript</span>
+                <span class="ttag">React 19</span>
+                <span class="ttag">Supabase</span>
+                <span class="ttag">Redis</span>
+                <span class="ttag">Resend</span>
+                <span class="ttag">Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://theriverrobexperience.com" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  Live Site ↗
+                </a>
+                <a href="https://github.com/Georgia-Harrell/riverrob-experience" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <!-- CSS browser mockup -->
+            <div class="featured-mockup" aria-hidden="true">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="code-dot dot-red"></span>
+                  <span class="code-dot dot-yellow"></span>
+                  <span class="code-dot dot-green"></span>
+                  <div class="browser-url">riverrobexperience.com</div>
+                </div>
+                <div class="browser-screen">
+                  <div class="site-hero-mock">
+                    <div class="site-nav-mock"></div>
+                    <div class="site-heading-mock"></div>
+                    <div class="site-sub-mock"></div>
+                    <div class="site-btns-mock">
+                      <div class="site-btn-mock"></div>
+                      <div class="site-btn-mock ghost"></div>
+                    </div>
+                    <div class="site-cards-mock">
+                      <div class="site-card-mock"></div>
+                      <div class="site-card-mock"></div>
+                      <div class="site-card-mock"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="project-card reveal-up" data-category="mobile">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">📱</span>
+              <a href="https://github.com/Georgia-Harrell/all-things-in-common" class="pcard-gh" aria-label="View AllThingsInCommon on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">AllThingsInCommon</h3>
+            <p class="pcard-desc">Cross-platform mobile marketplace app built with C# MAUI and .NET 7.0 — item listings, offers system, user authentication, and database integration running natively on iOS and Android.</p>
+            <div class="tech-tags">
+              <span class="ttag">C# MAUI</span>
+              <span class="ttag">.NET 7.0</span>
+              <span class="ttag">XAML</span>
+              <span class="ttag">iOS &amp; Android</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="react">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">🎟️</span>
+              <a href="https://github.com/Georgia-Harrell/event-ticket-app" class="pcard-gh" aria-label="View Event Ticket App on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Event Ticket App</h3>
+            <p class="pcard-desc">Multi-page React ticketing platform with shopping cart, PIN-protected admin dashboard, real-time inventory management, and localStorage persistence.</p>
+            <div class="tech-tags">
+              <span class="ttag">React 19</span>
+              <span class="ttag">Vite</span>
+              <span class="ttag">Context API</span>
+              <span class="ttag">useReducer</span>
+              <span class="ttag">LocalStorage</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="react">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">✅</span>
+              <a href="https://github.com/Georgia-Harrell/task-manager-redux" class="pcard-gh" aria-label="View Task Manager on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Task Manager + Redux</h3>
+            <p class="pcard-desc">Feature-rich task manager with Redux Toolkit: async thunks, debounced search, filter/sort, pagination, task detail panel, and full localStorage persistence.</p>
+            <div class="tech-tags">
+              <span class="ttag">React</span>
+              <span class="ttag">Redux Toolkit</span>
+              <span class="ttag">Async Thunks</span>
+              <span class="ttag">Vite</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="react">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">⚡</span>
+              <a href="https://github.com/Georgia-Harrell/nextjs-ssr-ssg" class="pcard-gh" aria-label="View Next.js app on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Next.js SSR / SSG App</h3>
+            <p class="pcard-desc">Production-built Next.js application exploring server-side rendering and static site generation, with multi-route pages, CSS modules, and full ESLint setup.</p>
+            <div class="tech-tags">
+              <span class="ttag">Next.js</span>
+              <span class="ttag">React</span>
+              <span class="ttag">SSR</span>
+              <span class="ttag">SSG</span>
+              <span class="ttag">CSS Modules</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="react">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">📝</span>
+              <a href="https://github.com/Georgia-Harrell/react-router-blog" class="pcard-gh" aria-label="View React Router Blog on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">React Router Blog</h3>
+            <p class="pcard-desc">Multi-page blog app demonstrating client-side navigation with React Router — post listing, dynamic detail routes, and a component-based architecture with Vite.</p>
+            <div class="tech-tags">
+              <span class="ttag">React</span>
+              <span class="ttag">React Router</span>
+              <span class="ttag">Vite</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="web">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">💰</span>
+              <a href="https://github.com/Georgia-Harrell/personal-finance-tracker" class="pcard-gh" aria-label="View Finance Tracker on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Personal Finance Tracker</h3>
+            <p class="pcard-desc">Standalone finance app with transaction entry, expense categorization, and spending summaries — pure HTML/CSS/JS with zero dependencies.</p>
+            <div class="tech-tags">
+              <span class="ttag">HTML5</span>
+              <span class="ttag">JavaScript</span>
+              <span class="ttag">CSS3</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="cpp">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">🔗</span>
+              <a href="https://github.com/Georgia-Harrell/data-structures-cpp" class="pcard-gh" aria-label="View Data Structures on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Data Structures (C++)</h3>
+            <p class="pcard-desc">Implementations from scratch: sorted linked lists, queues, dynamic memory management, and performance benchmarks scaled from 1 to 10,000 runs with comparison analysis.</p>
+            <div class="tech-tags">
+              <span class="ttag">C++</span>
+              <span class="ttag">Linked Lists</span>
+              <span class="ttag">Queues</span>
+              <span class="ttag">Perf Analysis</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="web">
+            <div class="pcard-top">
+              <span class="pcard-emoji" aria-hidden="true">🌤️</span>
+              <a href="https://github.com/Georgia-Harrell/weather-api-apps" class="pcard-gh" aria-label="View Weather API apps on GitHub" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+            <h3 class="pcard-title">Weather &amp; API Apps</h3>
+            <p class="pcard-desc">Collection of async JavaScript apps using Fetch API and async/await: a live weather dashboard and random joke generator pulling from real external REST APIs.</p>
+            <div class="tech-tags">
+              <span class="ttag">JavaScript</span>
+              <span class="ttag">Fetch API</span>
+              <span class="ttag">async/await</span>
+              <span class="ttag">REST APIs</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+<h2 id="education-heading" class="section-title">My journey</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal-up">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <div class="tl-body">
+              <span class="tl-period">2023 — 2026</span>
+              <h3 class="tl-school">Troy University</h3>
+              <p class="tl-degree">B.S. in Computer Science — <span class="grad-badge">Graduated May 2026</span></p>
+              <p class="tl-desc">
+                Advanced coursework spanning the full React ecosystem (Context, Redux Toolkit, Next.js),
+                mobile programming with C# MAUI, data structures and algorithms in C++, computer security,
+                operating systems, and an introduction to AI/machine learning. Progressed from HTML/CSS basics
+                to production-grade full-stack and mobile development.
+              </p>
+              <div class="tl-courses">
+                <span class="ctag">Front-End Development</span>
+                <span class="ctag">Data Structures (C++)</span>
+                <span class="ctag">Mobile Programming</span>
+                <span class="ctag">Web Application Dev</span>
+                <span class="ctag">Computer Security</span>
+                <span class="ctag">Operating Systems</span>
+                <span class="ctag">Fundamentals of AI</span>
+                <span class="ctag">Computer Organization &amp; Design</span>
+                <span class="ctag">Numerical Analysis</span>
+                <span class="ctag">Discrete Mathematics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-up">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <div class="tl-body">
+              <span class="tl-period">2021 — 2023</span>
+              <h3 class="tl-school">Faulkner University</h3>
+              <p class="tl-degree">Computer Science Studies</p>
+              <p class="tl-desc">
+                Foundations of computer science — wrote first interactive web pages in HTML/CSS/JavaScript,
+                explored object-oriented programming with Java, and built strong fundamentals in mathematics,
+                writing, and liberal arts. First exposure to version control and professional code workflows.
+              </p>
+              <div class="tl-courses">
+                <span class="ctag">Intro to Computer Science</span>
+                <span class="ctag">Computer Programming II (Java)</span>
+                <span class="ctag">Finite Mathematics</span>
+                <span class="ctag">English Composition</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-card reveal-up">
+<h2 id="contact-heading" class="section-title">Let's work together</h2>
+          <p class="contact-text">
+            Whether you have an opportunity, a project idea, or just want to say hello —
+            my inbox is always open. I'll do my best to get back to you!
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:georgiaharrelldesigns@gmail.com" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Say Hello
+            </a>
+            <a href="https://www.linkedin.com/in/georgia-harrell-732969280/" class="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        Designed &amp; Built by <span class="gradient-text">Georgia Harrell</span> · 2026
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/Georgia-Harrell" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/georgia-harrell-732969280/" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
