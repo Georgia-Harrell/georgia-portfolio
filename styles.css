@@ -871,6 +871,48 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   position: relative;
 }
 
+.pcard-body {
+  position: relative;
+  max-height: 5.5rem;
+  overflow: hidden;
+  transition: max-height .4s ease;
+}
+
+.pcard-body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, transparent, var(--surface));
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.pcard-body.expanded {
+  max-height: 60rem;
+}
+
+.pcard-body.expanded::after {
+  opacity: 0;
+}
+
+.pcard-readmore {
+  background: none;
+  border: none;
+  color: var(--p300);
+  font-size: .78rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: .02em;
+  align-self: flex-start;
+  transition: color .2s;
+}
+
+.pcard-readmore:hover { color: var(--accent); }
+
 .pcard-wip {
   font-size: .7rem;
   font-weight: 700;
