@@ -913,6 +913,23 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .pcard-readmore:hover { color: var(--accent); }
 
+.rr-screenshots {
+  display: flex;
+  gap: .5rem;
+  margin: .75rem 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.rr-screenshots::-webkit-scrollbar { display: none; }
+.rr-screenshots img {
+  height: 160px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
 .pcard-wip {
   font-size: .7rem;
   font-weight: 700;
